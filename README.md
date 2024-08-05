@@ -16,8 +16,21 @@ npm run build
 
 ### Архитектура проекта сделана по Feature-Sliced Design (FSD)
 ```txt
-app - основное приложение
-features - функции по тз для основного приложения
-widgets - виджеты основного приложения (HeaderButtons, TableContent)
-shared - прочие компоненты UI и другие
+├── app - основное приложение
+│   ├── App.css
+│   ├── Table.tsx
+│   ├── assets
+│   │   └── react.svg
+│   ├── index.css
+│   ├── index.tsx
+│   └── vite-env.d.ts
+├── features - функции по тз для основного приложения
+│   └── GenerateTableFunctions.ts
+├── shared - прочие компоненты UI и другие
+│   └── components
+│       └── Modal.tsx
+└── widgets - виджеты основного приложения
+    ├── HeaderButtons.tsx
+    ├── TableContent.tsx
+    └── TableRow.tsx
 ```
